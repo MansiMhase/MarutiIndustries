@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahindra Industries</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="../style.css" rel="stylesheet">
+</head>
+<style>
+  .product-section {
+    background: url('../images/tube.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+  }
+
+  .product-container {
+    background-color: rgba(255, 255, 255, 0.79);
+    border-radius: 12px;
+  }
+
+  .product-container {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 80px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .product-image {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .product-image:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+  }
+
+  .table {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+
+  table.table td,
+  table.table th {
+    padding: 6px 10px;
+    /* tighter spacing */
+    font-size: 14px;
+    /* smaller text */
+  }
+
+  th {
+    background-color: #e53935;
+    /* red header */
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  td {
+    background-color: #fdf2f2;
+    /* soft red tint */
+    border: 1px solid #e0e0e0;
+    padding: 12px 12px;
+  }
+
+  thead th {
+    border: 1px solid #e53935;
+  }
+
+  #toggleBtn {
+    background-color: #e53935;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../images/logo.png" alt="Maruti Industries Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../products/tube_straightening.html">Tube-Straightening Machine</a>
+              </li>
+              <li><a class="dropdown-item" href="../products/bucking_unit.html">Bucking Unit</a></li>
+              <li><a class="dropdown-item" href="../products/pointing_machine.html">Pointing Machine</a></li>
+              <li><a class="dropdown-item" href="../products/power_pack.html">Pointing Machine Power Pack</a></li>
+              <li><a class="dropdown-item" href="../products/billet_cutting.html">Billet Cutting Machine</a></li>
+              <li><a class="dropdown-item" href="../products/billet_conveyor.html">Billet Conveyor Furnace</a></li>
+              <li><a class="dropdown-item" href="../products/pinch_roller.html">Pinch Roller</a></li>
+              <li><a class="dropdown-item" href="../products/assel_mill.html">Assel Mill Outlet System</a></li>
+              <li><a class="dropdown-item" href="../products/pre_tightening_unit.html">Pre Tightening Unit</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../gallery.html">Our Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="../enquiry.html">Enquiry</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="#productslist">Products</a></li>
+      <li><a href="../gallery.html">Our Gallery</a></li>
+      <li><a href="../enquiry.html">Enquiry</a></li>
+    </ul>
+  </div>
+  <section class="product-section">
+    <div class="product-container shadow-lg p-4">
+
+      <div class="text-center mb-4">
+        <h2 class="text-danger fw-bold" style="margin-bottom: 20px;">Tube Straightening Machine</h2>
+        <img src="../images/tube.jpeg" alt="Tube Straightening Machine" class=" product-image rounded mb-3">
+      </div>
+      <table class="table table-bordered mb-4">
+        <thead>
+          <tr>
+            <th class="bg-danger text-white text-center">Salient Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Roll width is designed for 1.2 scroll pitch.</td>
+          </tr>
+          <tr>
+            <td>Hyperbolic profile for good contact.</td>
+          </tr>
+          <tr>
+            <td>Rollers are made of D2 Material.</td>
+          </tr>
+          <tr>
+            <td>Hard Chrome plated tie rods provide better stability.</td>
+          </tr>
+          <tr>
+            <td>All top rollers can be individually adjusted through induction motors and worm gear boxes. Hand Wheels
+              are also provided for manual adjustment.</td>
+          </tr>
+          <tr>
+            <td>VFD is provided for speed adjustment.</td>
+          </tr>
+          <tr>
+            <td>Charging and discharging system is optional.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="text-center">
+        <button id="toggleBtn" class="btn btn-danger">Read More</button>
+      </div>
+
+      <div id="moreContent" style="display: none;">
+        <table class="table table-bordered mb-4">
+          <thead>
+            <tr>
+              <th colspan="2" class="bg-danger text-white text-center">Machine Specification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Max Tube Diameter</td>
+              <td>150 mm</td>
+            </tr>
+            <tr>
+              <td>Max Tube Thickness</td>
+              <td>32 mm</td>
+            </tr>
+            <tr>
+              <td>Min Tube Diameter</td>
+              <td>45 mm</td>
+            </tr>
+            <tr>
+              <td>Straightness</td>
+              <td>1:1000</td>
+            </tr>
+            <tr>
+              <td>Tube Length</td>
+              <td>12 mtrs</td>
+            </tr>
+            <tr>
+              <td>Cycle Time</td>
+              <td>30 sec</td>
+            </tr>
+            <tr>
+              <td>Power</td>
+              <td>110 kW</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered mb-4">
+          <thead>
+            <tr>
+              <th class="bg-danger text-white text-center">About Scroll Pitch</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Scroll pitch is the axial distance which tube travels during its one revolution. The effective roll
+                width should be minimum 1.1 times Scroll pitch of largest tube size.</td>
+            </tr>
+            <tr>
+              <td>The roll width as mentioned above ensures all points on the tube passes twice thru one roller. This
+                improves performance of machine.</td>
+            </tr>
+            <tr>
+              <td>Selection of optimum hyperbola profile provides 100% line contact.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-bordered mb-4">
+          <thead>
+            <tr>
+              <th colspan="2" class="bg-danger text-white text-center">Straightening Machine Basic Design</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TUBE OD</td>
+              <td>140 mm</td>
+            </tr>
+            <tr>
+              <td>TUBE ID</td>
+              <td>85 mm</td>
+            </tr>
+            <tr>
+              <td>ROLL PITCH</td>
+              <td>1850 mm</td>
+            </tr>
+            <tr>
+              <td>YOUNG'S MODULUS (E)</td>
+              <td>280000 N/mm²</td>
+            </tr>
+            <tr>
+              <td>MOMENT OF INERTIA</td>
+              <td>16295017.72 mm⁴</td>
+            </tr>
+            <tr>
+              <td>Y/S OF MATERIAL</td>
+              <td>580 N/mm²</td>
+            </tr>
+            <tr>
+              <td>MIN DEFLECTION (THEORY)</td>
+              <td>8.09 mm</td>
+            </tr>
+            <tr>
+              <td>DEFLECTION MAX</td>
+              <td>9.11 mm</td>
+            </tr>
+            <tr>
+              <td>FORCE</td>
+              <td>424313 N</td>
+            </tr>
+            <tr>
+              <td>FORCE</td>
+              <td>43 TON</td>
+            </tr>
+            <tr>
+              <td>ROLL ROOT DIA</td>
+              <td>275 mm</td>
+            </tr>
+            <tr>
+              <td>TUBE LINER SPEED (MAX)</td>
+              <td>25 m/min</td>
+            </tr>
+            <tr>
+              <td>EFFECTIVE ROLL RPM</td>
+              <td>29.5</td>
+            </tr>
+            <tr>
+              <td>COEFFICIENT OF ROLLING FRICTION</td>
+              <td>0.3</td>
+            </tr>
+            <tr>
+              <td>AXIAL FORCE ON ROLL</td>
+              <td>127294 N</td>
+            </tr>
+            <tr>
+              <td>TORQUE ON ROLL</td>
+              <td>17185 N-m</td>
+            </tr>
+            <tr>
+              <td>TOTAL POWER</td>
+              <td>53.03 kW</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th colspan="2" class="bg-danger text-white text-center">Gearbox & Motor Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SERVICE FACTOR G/BOX</td>
+              <td>2.0 (Recommended for heavy shocks)</td>
+            </tr>
+            <tr>
+              <td>POWER OF ONE G/BOX</td>
+              <td>5.3 kW</td>
+            </tr>
+            <tr>
+              <td>SERVICE FACTOR MOTOR</td>
+              <td>1.4</td>
+            </tr>
+            <tr>
+              <td>POWER OF MOTOR</td>
+              <td>37.0 kW</td>
+            </tr>
+            <tr>
+              <td>MOTOR RPM</td>
+              <td>750</td>
+            </tr>
+            <tr>
+              <td>G/BOX RATIO</td>
+              <td>25.45</td>
+            </tr>
+            <tr>
+              <td>@G/BOX RATING</td>
+              <td>55 kW, Ratio 1:25, Input RPM 750, Single input and 3 output shafts</td>
+            </tr>
+            <tr>
+              <td>G/BOX MAKE</td>
+              <td>2 Nos — Elecon / Shanti</td>
+            </tr>
+            <tr>
+              <td>INDUCTION MOTOR</td>
+              <td>40 kW, 750 RPM, 3 Phase AC Motor, Qty: 2 Nos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="productslist" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center text-danger mb-4">Our Products</h2>
+      <div class="row justify-content-center ">
+
+        <div class="col-md-6">
+          <ul class="list-group mb-4">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="../products/tube_straightening.html" style="color: black;"
+                class="fw-semibold text-decoration-none flex-grow-1">
+                Tube Straightening Machine
+              </a>
+              <a href="../products/tube_straightening.html" class="btn btn-sm btn-outline-danger">+</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="../products/bucking_unit.html" style="color: black;"
+                class="fw-semibold text-decoration-none flex-grow-1">
+                Bucking Unit
+              </a>
+              <a href="../products/bucking_unit.html" class="btn btn-sm btn-outline-danger">+</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="../products/pointing_machine.html" style="color: black;"
+                class="fw-semibold text-decoration-none flex-grow-1">
+                Pointing Machine
+              </a>
+              <a href="../products/pointing_machine.html" class="btn btn-sm btn-outline-danger">+</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="../products/power_pack.html" style="color: black;"
+                class="fw-semibold text-decoration-none flex-grow-1">
+                Pointing Machine Power Pack
+              </a>
+              <a href="../products/power_pack.html" class="btn btn-sm btn-outline-danger">+</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="../products/billet_cutting.html" style="color: black;"
+                class="fw-semibold text-decoration-none flex-grow-1">
+                Billet Cutting Machine
+              </a>
+              <a href="../products/billet_cutting.html" class="btn btn-sm btn-outline-danger">+</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <ul class="list-group mb-4">
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="../products/billet_conveyor.html" style="color: black;"
+                class="fw-semibold text-decoration-none flex-grow-1">
+                Billet Conveyor Furnace
+              </a>
+              <a href="../products/billet_conveyor.html" class="btn btn-sm btn-outline-danger">+</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="../products/pinch_roller.html" style="color: black;"
+                class="fw-semibold text-decoration-none flex-grow-1">
+                Pinch Roller
+              </a>
+              <a href="../products/pinch_roller.html" class="btn btn-sm btn-outline-danger">+</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="../products/assel_mill.html" style="color: black;"
+                class="fw-semibold text-decoration-none flex-grow-1">
+                Assel Mill Outlet System
+              </a>
+              <a href="../products/assel_mill.html" class="btn btn-sm btn-outline-danger">+</a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <a href="../products/pre_tightening_unit.html" style="color: black;"
+                class="fw-semibold text-decoration-none flex-grow-1">
+                Pre - Tightening Unit
+              </a>
+              <a href="../products/pre_tightening_unit.html" class="btn btn-sm btn-outline-danger">+</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; Created by Mansi Mhase.</p>
+        </div>
+        <div class="footer-right">
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About</a>
+          <a href="#productslist">Products</a>
+          <a href="../gallery.html">Our Gallery</a>
+          <a href="../enquiry.html">Enquiry</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const toggleBtn = document.getElementById("toggleBtn");
+    const moreContent = document.getElementById("moreContent");
+
+    toggleBtn.addEventListener("click", () => {
+      if (moreContent.style.display === "none") {
+        moreContent.style.display = "block";
+        toggleBtn.textContent = "Read Less";
+      } else {
+        moreContent.style.display = "none";
+        toggleBtn.textContent = "Read More";
+      }
+    });
+  </script>
+  <script src="maruti.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
