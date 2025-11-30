@@ -16,14 +16,14 @@ This project enables customers and partners to submit enquiries seamlessly, whil
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML5, CSS3, JavaScript  
-- **Backend (optional):** PHP 
-- **Database (optional):** MySQL
+- **Backend:** PHP 
+- **Database:** MySQL
 - **Deployment:** GitHub Pages
 ---
 
 ## 📂 Project Structure
 MarutiIndustries/
-├── .git/                    # Git version control folder
+├── .git/                   # Git version control folder
 ├── images/                 # Image assets used across the site
 ├── products/               # Product-related HTML or media
 ├── about.html              # About Maruti Industries
